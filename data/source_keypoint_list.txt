@@ -1,0 +1,3 @@
+cat/flickr_cat_000240.png 0
+foxes/flickr_wild_000123.png 1
+leopard/flickr_wild_001807.png 2

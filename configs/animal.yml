@@ -1,0 +1,61 @@
+dataset: "animal"
+data:
+    image_size: 256
+    channels: 3
+    logit_transform: false
+    uniform_dequantization: false
+    gaussian_dequantization: false
+    random_flip: true
+    rescaled: true
+    num_workers: 4
+    data_dir: "/data/guxiang/OT/data/animal_images/train"
+
+model:
+    type: "simple"
+    in_channels: 3
+    out_ch: 3
+    num_channels: 128
+    num_res_blocks: 1
+    learn_sigma: True
+    class_cond: False
+    attention_resolutions: "16"
+    num_heads: 4
+    num_head_channels : 64
+    num_heads_upsample : -1
+    use_scale_shift_norm: True
+    dropout: 0.0
+    resblock_updown : True
+    use_fp16: False
+    use_new_attention_order: False
+    var_type: fixedsmall
+    num_class: 2
+    pretrained_dict: "pretrained_model/afhq_dog_4m.pt"
+    ema_rate: 0.9999
+    ema: True
+
+diffusion:
+    beta_schedule: linear
+    beta_start: 0.0001
+    beta_end: 0.02
+    num_diffusion_timesteps: 1000
+    batch_size: 20
+    saved_samples: "runs/samples"
+
+training:
+    batch_size: 16
+    n_epochs: 10000
+    n_iters: 500000
+    snapshot_freq: 5000
+    validation_freq: 5000
+
+sampling:
+    batch_size: 32
+    last_only: True
+
+optim:
+    weight_decay: 0.000
+    optimizer: "Adam"
+    lr: 0.00002
+    beta1: 0.9
+    amsgrad: false
+    eps: 0.00000001

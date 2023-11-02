@@ -1,0 +1,3 @@
+lion/flickr_wild_003604.png 3
+tiger/flickr_wild_003034.png 4
+wolf/flickr_wild_002632.png 5
