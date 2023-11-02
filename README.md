@@ -1,5 +1,5 @@
 # Optimal Transport-guided Conditional Score-based diffusion model (OTCS)
-Official code for "Xiang Gu, Liwei Yang, Jian Sun, and Zongben Xu. Optimal Transport-guided Conditional Score-based diffusion model. NeurIPS, 2023."[[OpenReview Version]]() [[ArXive Version]]()
+Official code for "Xiang Gu, Liwei Yang, Jian Sun, and Zongben Xu. Optimal Transport-guided Conditional Score-based diffusion model. NeurIPS, 2023."[\[OpenReview Version\]](https://openreview.net/forum?id=9Muli2zoFn&referrer=%5Bthe%20profile%20of%20Xiang%20Gu%5D(%2Fprofile%3Fid%3D~Xiang_Gu1)) [[ArXive Version]]()
 
 To our knowledge, this is the first conditional score-based model for unpaired or partially paired data settings. 
 
