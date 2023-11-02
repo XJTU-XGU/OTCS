@@ -28,7 +28,7 @@ For inference, run
 python main_ddpm.py --config celeba.yml --sample True --gpu_id 0,1,2,3
 ```
 
-![](https://github.com/XJTU-XGU/OTCS/blob/main/figures/qualitative_results_celeba.pdf)
+![](https://github.com/XJTU-XGU/OTCS/blob/main/figures/qualitative_results_celeba.png)
 
 ### Semi-paired image-to-image translation on animal data
 For animal images, first download the [animal images](https://drive.google.com/file/d/1-1WhUJV8NkJLZEmQi1TpA5DUq4Zn61pJ/view?usp=sharing), and modify the data_dir in animal.yml to the dataset. Note that the animal images are originally from [AFHQ](https://github.com/clovaai/stargan-v2). Please also cite their paper if you use the animal images. Download the pretrained model of [ILVR on Dog Images](https://onedrive.live.com/?authkey=%21AOIJGI8FUQXvFf8&id=72419B431C262344%21103807&cid=72419B431C262344) and put it in the path "./pretrained_model". Then train the potential networks by 
@@ -46,7 +46,7 @@ For inference, run
 python main_ddpm.py --config animal.yml --sample True --gpu_id 0,1,2,3
 ```
 
-![](https://github.com/XJTU-XGU/OTCS/blob/main/figures/qualitative_results_celeba.pdf)
+![](https://github.com/XJTU-XGU/OTCS/blob/main/figures/qualitative_results_celeba.png)
 ## How the use the code for your project
 For better understanding the following implementation, please refer to Algorithms 1 and 2 in the Appendix.
 ### For unsupervised OT
