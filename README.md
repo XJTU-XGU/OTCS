@@ -46,7 +46,7 @@ For inference, run
 python main_ddpm.py --config animal.yml --sample True --gpu_id 0,1,2,3
 ```
 
-![](https://github.com/XJTU-XGU/OTCS/blob/main/figures/qualitative_results_celeba.png)
+![](https://github.com/XJTU-XGU/OTCS/blob/main/figures/qualitative_results_animal.png)
 ## How the use the code for your project
 For better understanding the following implementation, please refer to Algorithms 1 and 2 in the Appendix.
 ### For unsupervised OT
