@@ -2,7 +2,7 @@
 Official code for ["Xiang Gu, Liwei Yang, Jian Sun, and Zongben Xu. Optimal Transport-guided Conditional Score-based diffusion model. NeurIPS, 2023."]()
 
 ### News
-[2023.10] The code for OTCS has been uploaded! Welcome to try out and free to contact xianggu@stu.xjtu.edu.cn.
+[2023.11] The code for OTCS has been uploaded! Welcome to try out and free to contact xianggu@stu.xjtu.edu.cn.
 
 ### Demos
 We provide a [1-D demo](https://github.com/XJTU-XGU/OTCS/blob/main/notebooks/demo_1D_unpaired.ipynb) and a [2-D demo](https://github.com/XJTU-XGU/OTCS/blob/main/notebooks/demo_2D_semi_paired.ipynb) of OTCS in the folder of notebooks, to help understand OTCS. Please refer to them.
