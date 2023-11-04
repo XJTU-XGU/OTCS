@@ -25,7 +25,7 @@ and train the score_based model by
 ```
 python main_ddpm.py --config celeba.yml --gpu_id 0,1,2,3
 ```
-Our trained model is available [here](https://drive.google.com/file/d/1-7L0vR8R0qBKcKKC2hM-QeZzr-27xJrA/view?usp=sharing). For inference, run 
+Our trained model is available [here](https://drive.google.com/file/d/1-7L0vR8R0qBKcKKC2hM-QeZzr-27xJrA/view?usp=sharing) (you may download it and modify the path at line 188 in main_ddpm.py). For inference, run 
  
 ```
 python main_ddpm.py --config celeba.yml --sample True --gpu_id 0,1,2,3
@@ -44,7 +44,7 @@ and train the score_based model by
 ```
 python main_ddpm.py --config animal.yml  --gpu_id 0,1,2,3
 ```
-Our trained model is available [here](https://drive.google.com/file/d/1-LJd-PMVdPhDf0g6yqaTfqtBTBc1C5ej/view?usp=drive_link). For inference, run 
+Our trained model is available [here](https://drive.google.com/file/d/1-LJd-PMVdPhDf0g6yqaTfqtBTBc1C5ej/view?usp=drive_link) (you may download it and modify the path at line 188 in main_ddpm.py). For inference, run 
 ```
 python main_ddpm.py --config animal.yml --sample True --gpu_id 0,1,2,3
 ```
