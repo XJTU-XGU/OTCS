@@ -12,10 +12,10 @@ We provide a [1-D demo](https://github.com/XJTU-XGU/OTCS/blob/main/notebooks/dem
 
 ## Instruction
 
-We provide code for unpaired super-resolution on CelebA dataset and semi-paired image-to-image translation on animal dataset. For your own task, please prepare your datasets as in "the use the code for your project".
+We provide code for unpaired super-resolution on CelebA dataset and semi-paired image-to-image translation on the animal dataset. For your own task, please prepare your datasets as in "How to use the code for your project".
 
 ### Unpaired super-resolution on CelebA
-For celeba, first modify the data_dir in celeba.yml to the dataset, download the pretrained model of [DDIM](https://drive.google.com/file/d/1R_H-fJYXSH79wfSKs9D-fuKQVan5L-GR/view) and put it in path "./pretrained_model". Then train the potential networks by 
+For celeba, first, modify the data_dir in celeba.yml to the dataset, download the pretrained model of [DDIM](https://drive.google.com/file/d/1R_H-fJYXSH79wfSKs9D-fuKQVan5L-GR/view) and put it in path "./pretrained_model". Then train the potential networks by 
 
 ```
 python train_OT.py --ot_type unsupervised --epsilon 1e-7 --lr 1e-6 --dataset celeba 
@@ -52,14 +52,14 @@ python main_ddpm.py --config animal.yml --sample True --gpu_id 0,1,2,3
 ![](https://github.com/XJTU-XGU/OTCS/blob/main/figures/qualitative_results_animal.png)
 
 Note that when training the OT potentials, the epsilon should be small to better approach the unregularized OT. Correspondingly, the learning rate should be small (e.g., 1e-6) and the training steps should be large (e.g., 5e5)!
-## How the use the code for your project
-For better understanding the following implementation, please refer to Algorithms 1 and 2 in the Appendix.
+## How to use the code for your project
+For a better understanding of the following implementation, please refer to Algorithms 1 and 2 in the Appendix.
 ### For unsupervised OT
 #### Stage I: train OT potentials
 *The following code should be put in Line 101 of "train_OT.py".*
 
 If you choose unsupervised OT, first prepare the source and target datasets. You may use the ImageFolder for convenience.
-Note that each item in the dataset should be like (image,label) where the label is not used.
+Note that each item in the dataset should be like (image, label) where the label is not used.
 ```python
 source_dataset = ImageFolder("root/to/source_data")
 target_dataset = ImageFolder("root/to/target_data")
@@ -70,7 +70,7 @@ from runners import OT_solver
 ot_solver = OT_solver.LargeScaleOTSolver(ot_type="unsupervised")
 ```
 If the datasets are not too large for the computer memory (not GPU), you may preload the images
-to the computer memory, which will faster the training process for potentials. This is optional.
+to the computer memory, which will speed up the training process for potentials. This is optional.
 ```python
 # optional
 save_dir = "dir for save data or results" # default is "exp/OT/models"
