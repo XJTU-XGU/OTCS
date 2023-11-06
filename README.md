@@ -51,7 +51,7 @@ python main_ddpm.py --config animal.yml --sample True --gpu_id 0,1,2,3
 
 ![](https://github.com/XJTU-XGU/OTCS/blob/main/figures/qualitative_results_animal.png)
 
-* Note that when training the OT potentials, the epsilon should be small to better approach the unregularized OT. Correspondingly, the learning rate should be small (e.g., 1e-6) and the training steps should be large (e.g., 5e5)!* 
+* Note that when training the OT potentials, the epsilon should be small to better approach the unregularized OT. Correspondingly, the learning rate should be small (e.g., 1e-6) and the training steps should be large (e.g., 5e5)! * 
 ## How to use the code for your project
 For a better understanding of the following implementation, please refer to Algorithms 1 and 2 in the Appendix.
 ### For unsupervised OT
