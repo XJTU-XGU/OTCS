@@ -4,8 +4,15 @@ Official code for "Xiang Gu, Liwei Yang, Jian Sun, and Zongben Xu. Optimal Trans
 To our knowledge, this is the first conditional score-based model for unpaired or partially paired data settings. 
 
 ![](https://github.com/XJTU-XGU/OTCS/blob/main/figures/OT_guided_SBDMs.png)
+
+
+We provide [a simple introduction to OTCS](https://xjtu-xgu.github.io/xianggu/projects/otcs/otcs.html) that can be easily understood and implemented. Welcome to read it.
+
+
 ## News
 [2023.11] The code for OTCS has been uploaded! Welcome to try out and free to contact xianggu@stu.xjtu.edu.cn.
+
+[2023.12] [A simple introduction to OTCS](https://xjtu-xgu.github.io/xianggu/projects/otcs/otcs.html) is released.
 
 ## Demos
 We provide a [1-D demo](https://github.com/XJTU-XGU/OTCS/blob/main/notebooks/demo_1D_unpaired.ipynb) and a [2-D demo](https://github.com/XJTU-XGU/OTCS/blob/main/notebooks/demo_2D_semi_paired.ipynb) of OTCS in the folder of notebooks, to help understand OTCS. Please refer to them.
